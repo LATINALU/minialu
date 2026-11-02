@@ -1,0 +1,192 @@
+//////////////////////////////////////////////////////
+// 인덱스 ( *INDEX ) 값은 절대 중복되어선 안됩니다.
+
+//////////////////////////////////////////////////////
+// 타입 ( *TYPE ) 값은 다음 속성을 가집니다.
+
+//////////////////////////////////////////////////////
+// 유지 타입 ( *KEEP_TYPE ) 은 다음과 같습니다.
+// 0 : DB에 저장하지 않고, 접속 해제시 해제됨
+// 1 : DB에 저장하여 계속적으로 지속됨. ( DB에 저장되어 있는 동안에도 시간은 흘러감 )
+// 2 : DB에 저장하여 계속적으로 지속됨. ( DB에 저장되어 있는 동안은 시간이 흘러가지 않음 )
+
+//////////////////////////////////////////////////////
+// 유지 시간 ( *KEEP_TIME ) 은 버프의 유지 시간입니다. ( 초 단위 )
+
+//////////////////////////////////////////////////////
+// 효과 ( *EFFECT ) 는 버프의 실제 효과를 나타내며, 중복으로 선언이 가능합니다.
+//EFFECTTYPE_PUNCH                 = 0,  // 손 공격력
+//EFFECTTYPE_KICK                  = 1,  // 발 공격력
+//EFFECTTYPE_DEFENCE               = 2,  // 방어력
+//EFFECTTYPE_HP                    = 3,  // HP
+//EFFECTTYPE_MP                    = 4,  // MP
+//EFFECTTYPE_SKILL                 = 5,  // 스킬 공격력
+//EFFECTTYPE_ADV_SKILL             = 6,  // 신스킬 공격력
+//EFFECTTYPE_KILLER_SKILL          = 7,  // 필살기 공격력
+//EFFECTTYPE_ADV_KILLER_SKILL      = 8,  // 초필살기 공격력
+//EFFECTTYPE_THROW_SKILL           = 9,  // 던지기 공격력
+//EFFECTTYPE_TRANSFORM             = 10, // 유저 변신
+//EFFECTTYPE_KICK_RATE             = 11, // 발 공격력 %증가
+//EFFECTTYPE_BATTLE_EXP            = 12, // 대전 경험치 %증가
+//EFFECTTYPE_BATTLE_COIN           = 13, // 대전 코인 %증가
+//EFFECTTYPE_DUNGEON_EXP           = 14, // 던전 경험치 %증가
+//EFFECTTYPE_DUNGEON_COIN          = 15, // 던전 코인 %증가
+//EFFECTTYPE_DEFENCE_RATE          = 16, // 방어력 %증가
+//EFFECTTYPE_HP_RATE               = 17, // HP %증가
+//EFFECTTYPE_MP_RATE               = 18, // MP %증가
+//EFFECTTYPE_MIX_CARD              = 19, // 카드 조합률 %증가
+//EFFECTTYPE_SKILL_RATE            = 20, // 스킬 공격력 %증가
+//EFFECTTYPE_ADV_SKILL_RATE        = 21, // 신스킬 공격력 %증가
+//EFFECTTYPE_NEWSKILL_AS           = 22, // 신스킬1 사용 가능
+//EFFECTTYPE_NEWSKILL_SD           = 23, // 신스킬2 사용 가능
+//EFFECTTYPE_NEWSKILL_DF           = 24, // 신스킬3 사용 가능
+//EFFECTTYPE_NEWSKILL_AD           = 25, // 신스킬4 사용 가능
+//EFFECTTYPE_NEWSKILL_SF           = 26, // 신스킬5 사용 가능
+//EFFECTTYPE_KILLER_SKILL_RATE     = 27, // 필살기 공격력 %증가
+//EFFECTTYPE_ADV_KILLER_SKILL_RATE = 28, // 초필살기 공격력 %증가
+//EFFECTTYPE_PUNCH_RATE            = 29, // 손 공격력 %증가
+//EFFECTTYPE_ALL_COIN              = 30, // 모든 미파 드랍 %증가
+//EFFECTTYPE_ALL_EXP               = 31, // 모든 경험치 %증가
+//EFFECTTYPE_THROW_SKILL_RATE      = 32, // 던지기 공격력 %증가
+//EFFECTTYPE_UP_CARD               = 33, // 카드 강화률 %증가
+//EFFECTTYPE_UP_ITEM               = 34, // 아이템 강화률 %증가
+
+// 27 : 레전드 능력치
+// 38 : 스킬 5 공격력
+// 39 : 모든 신스킬 공격력 증가
+// 40 : 모든 신스킬 공격력 레벨 * 10 만큼 증가
+// 41 : 모든 스킬과 신스킬 공격력 증가 
+// 42 : 모슨 스킬과 신스킬 공격력 퍼센테이지로 증가 //입력 값은 추가 퍼센트의 값
+
+// < 예시 : HP +1000 과   160번 몬스터로 변신시 선언 >
+// *EFFECT	3	1000
+// *EFFECT	10	160
+
+//////////////////////////////////////////////////////
+// *EXP_PER_ONE_KILL : 변신 유저가 한명 죽일때 마다 얻는 경험치
+
+//////////////////////////////////////////////////////
+// *COIN_PER_ONE_KILL : 변신 유저가 한명 죽일때 마다 얻는 미파
+
+//////////////////////////////////////////////////////
+// *KILL_LIMIT : 최대 제한 킬수
+
+//////////////////////////////////////////////////////
+// *DROP_MONEY_COUNT : 땅에 떨어지는 돈의 갯수
+
+//////////////////////////////////////////////////////
+// *DROP_MONEY: 땅에 떨어지는 돈의 개당 액수
+
+//////////////////////////////////////////////////////
+// *DROP_ITEM: 아이템번호  확률
+
+//////////////////////////////////////////////////////
+// 드랍 아이템 ( *DROP_ITEM ) 은 중복 선언이 가능합니다.
+// EnemyDefine.txt 의 내용과 다르게 여기에 선언된 아이템은 모두 떨어집니다.
+// 대신 확률이 1.0보다 낮은 아이템은 그 확률만큼 떨어집니다
+
+//////////////////////////////////////////////////////
+// *KILL_ITEM : 유저를 죽일 때 마다 여기 있는 아이템을 획득합니다. ( 중복선언가능 )
+// DROP_ITEM 과 다르게 선언된것 중에 하나만 획득하게 됩니다.
+// 예시 ) *KILL_ITEM	0	0.1
+// 예시설명 ) 0번 아이템(물약)을 10% 확률로 유저를 죽일때마다 획득합니다.
+
+
+//////////////////////////////////////////////////////
+// *EXP_AT_OTHER_USER : 다른 유저들이 변신한 유저를 죽였을 때 얻을 경험치
+
+//////////////////////////////////////////////////////
+// *MONEY_AT_OTHER_USER : 다른 유저들이 변신한 유저를 죽였을 때 얻을 미파
+
+/////////////////////////////////////////////////////
+// *CASHBUFF : 1이면 해제 할수 없다.
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////// 다크우드 일반 몬스터 및 보스 변신 1차
+
+*BUFF_INFO
+{
+	*INDEX			0
+	*NAME			"네오 변신중"
+
+	*TYPE			0
+	
+	*KEEP_TYPE		0
+	*KEEP_TIME		600
+
+	*SPRITE_INDEX		0
+	
+	*EFFECT			10	123
+
+	*EXP_PER_ONE_KILL	200
+	*COIN_PER_ONE_KILL	100
+	
+	*KILL_LIMIT		5
+
+	*DROP_MONEY_COUNT	5
+	*DROP_MONEY		100
+
+	*DROP_ITEM       282     0.1
+	*DROP_ITEM       265     0.001
+
+	*EXP_AT_OTHER_USER      300
+	*MONEY_AT_OTHER_USER    300
+}
+
+*BUFF_INFO
+{
+	*INDEX			1
+	*NAME			"지옥병사 변신중"
+
+	*TYPE			0
+	
+	*KEEP_TYPE		0
+	*KEEP_TIME		600
+
+	*SPRITE_INDEX		1
+	
+	*EFFECT			10	13
+
+	*EXP_PER_ONE_KILL	280
+	*COIN_PER_ONE_KILL	150
+	
+	*KILL_LIMIT		10
+
+	*DROP_MONEY_COUNT	5
+	*DROP_MONEY		150
+
+	*DROP_ITEM       282     0.1
+	*DROP_ITEM       265     0.005
+
+	*EXP_AT_OTHER_USER      380
+	*MONEY_AT_OTHER_USER    380
+}
+
+*BUFF_INFO
+{
+	*INDEX			2
+	*NAME			"분노한 화염정령 변신중"
+
+	*TYPE			0
+	
+	*KEEP_TYPE		0
+	*KEEP_TIME		600
+
+	*SPRITE_INDEX		2
+	
+	*EFFECT			10	71
+
+	*EXP_PER_ONE_KILL	320
+	*COIN_PER_ONE_KILL	180
+	
+	*KILL_LIMIT		10
+
+	*DROP_MONEY_COUNT	6
+	*DROP_MONEY		150
+
+	*DROP_ITEM       282     0.1
+	*DROP_ITEM       265     0.007
+
+	*EXP_AT_OTHER_USER      400
+	*MONEY_AT_OTHER_USER    400
+}

@@ -1,0 +1,163 @@
+*ITEM_INFO
+{
+	*INDEX			0
+	*TYPE			5
+	*EQUIP_TYPE		0
+	*DRESS_TYPE		0
+	*DRESS_COLORTABLE	-1
+	*USE_TYPE		3
+	*REQUEST_LEVEL		1
+	*CHARACTER		-1
+
+	*NAME			"[Menor]Pocion HP"
+	*DISCRIPTION		"Restaura tu HP en +300 No puedes usar la pocion HP cuando tu Hp esta llena"
+	*USE_DISCRIPTION	"Coloca este item en tus slots rapidos. Usala con tus teclas rapidas o haciendo doble click en este."
+
+	*SHOP_TAB		0
+
+	*PRICE			2000
+	*CASH_PRICE		0	*GOLD_PRICE		0
+	*ENABLE_TRADE		1
+	*ENABLE_DROP		1
+	*ENABLE_SELL		1
+
+	*USE_DELAY		12000
+
+	*SPRITE_INDEX		0
+	*SPRITE_INDEX2		-1
+	*CASHUSE_ITEMVIEW	1
+
+	*PUNCH_POWER_MIN	0
+	*KICK_POWER_MIN		0
+	*DEFENCE_MIN		0
+	*HP_MIN			0
+	*MP_MIN			0
+
+	*PUNCH_POWER_MAX	0
+	*KICK_POWER_MAX		0
+	*DEFENCE_MAX		0
+	*HP_MAX			0
+	*MP_MAX			0
+
+	*MAX_ITEM_COUNT		99
+
+	*MAX_LIFE		0
+
+	*CJ_MENU_ID		""
+	*USE_PERIOD_HOUR	0
+	*USE_PERIOD_GROUP	-1
+
+	*SELL_COUNT		20
+	*BUFF_INDEX		-1
+
+}
+
+*ITEM_INFO
+{
+	*INDEX			1
+	*TYPE			5
+	*EQUIP_TYPE		0
+	*DRESS_TYPE		0
+	*DRESS_COLORTABLE	-1
+	*USE_TYPE		3
+	*REQUEST_LEVEL		1
+	*CHARACTER		-1
+
+	*NAME			"[Menor]Set Pocion HP"
+	*DISCRIPTION		"Te restaura  +3000 HP, a los miembros de tu equipo, y a los miembros de tu party."
+	*USE_DISCRIPTION	"Coloca este item en tus Slots Rapidos. Usalo con tus teclas rapidas o haciendo doble click en este."
+
+	*SHOP_TAB		0
+
+	*PRICE			4000
+	*CASH_PRICE		0	*GOLD_PRICE		0
+
+	*ENABLE_TRADE		1
+	*ENABLE_DROP		1
+	*ENABLE_SELL		1
+
+	*USE_DELAY		15000
+
+	*SPRITE_INDEX		1
+	*SPRITE_INDEX2		-1
+	*CASHUSE_ITEMVIEW	1
+
+	*PUNCH_POWER_MIN	0
+	*KICK_POWER_MIN		0
+	*DEFENCE_MIN		0
+	*HP_MIN			0
+	*MP_MIN			0
+
+	*PUNCH_POWER_MAX	0
+	*KICK_POWER_MAX		0
+	*DEFENCE_MAX		0
+	*HP_MAX			0
+	*MP_MAX			0
+
+	*MAX_ITEM_COUNT		99
+
+	*MAX_LIFE		0
+
+	*CJ_MENU_ID		""
+	*USE_PERIOD_HOUR	0
+	*USE_PERIOD_GROUP	-1
+
+	*SELL_COUNT		20
+	*BUFF_INDEX		-1
+
+}
+
+*ITEM_INFO
+{
+	*INDEX			2
+	*TYPE			5
+	*EQUIP_TYPE		0
+	*DRESS_TYPE		0
+	*DRESS_COLORTABLE	-1
+	*USE_TYPE		3
+	*REQUEST_LEVEL		1
+	*CHARACTER		-1
+
+	*NAME			"[Menor]Pocion MP"
+	*DISCRIPTION		"Restaura tu MP en +100. No puedes usar la Pocion MP cuando tu MP esta lleno."
+	*USE_DISCRIPTION	"Coloca este item en tus Slots Rapidos. Usalo con tus teclas rapidas o haciendo doble click en este."
+
+	*SHOP_TAB		0
+
+	*PRICE			2000
+	*CASH_PRICE		0	*GOLD_PRICE		0
+
+	*ENABLE_TRADE		1
+	*ENABLE_DROP		1
+	*ENABLE_SELL		1
+
+	*USE_DELAY		16000
+
+	*SPRITE_INDEX		2
+	*SPRITE_INDEX2		-1
+	*CASHUSE_ITEMVIEW	1
+
+	*PUNCH_POWER_MIN	0
+	*KICK_POWER_MIN		0
+	*DEFENCE_MIN		0
+	*HP_MIN			0
+	*MP_MIN			0
+
+	*PUNCH_POWER_MAX	0
+	*KICK_POWER_MAX		0
+	*DEFENCE_MAX		0
+	*HP_MAX			0
+	*MP_MAX			0
+
+	*MAX_ITEM_COUNT		99
+
+	*MAX_LIFE		0
+
+	*CJ_MENU_ID		""
+	*USE_PERIOD_HOUR	0
+	*USE_PERIOD_GROUP	-1
+
+	*SELL_COUNT		20
+	*BUFF_INDEX		-1
+
+}

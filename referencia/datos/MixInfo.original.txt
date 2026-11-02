@@ -1,0 +1,96 @@
+/////////////////////////////
+// 카드 조합 확률 테이블
+// 
+// 0 : CARD_A
+// 1 : CARD_B
+// 2 : CARD_C
+// 3 : CARD_D
+// 4 : CARD_E
+// 5 : CARD_F
+// 6 : CARD_G
+// 7 : CARD_H
+// 8 : CARD_I
+//
+// 확률 수치는 1.0 이 100% 임 ( 소수점은 최대 6자리까지 가능 )
+
+// 같은 등급 조합 테이블 ( 등급 업이 가능함 )
+
+*MIX_CARD	0	0	10.0
+*MIX_CARD	1	1	10.0
+*MIX_CARD	2	2	10.0
+*MIX_CARD	3	3	10.0
+*MIX_CARD	4	4	10.0
+*MIX_CARD	5	5	0.30
+*MIX_CARD	6	6	0.00
+*MIX_CARD	7	7	0.00
+*MIX_CARD	8	8	0.00
+*MIX_CARD	9	9	0.00
+*MIX_CARD	10	10	0.00
+
+
+// 같은 등급 조합 테이블 ( 등급 업이 가능함 )
+
+*MIX_SPECIAL_CARD	4	4	10.0
+*MIX_SPECIAL_CARD	5	5	10.0
+*MIX_SPECIAL_CARD	6	6	0.00
+*MIX_SPECIAL_CARD	7	7	0.00
+*MIX_SPECIAL_CARD	8	8	0.00
+*MIX_SPECIAL_CARD	9	9	0.00
+*MIX_SPECIAL_CARD	10	10	0.00
+*MIX_SPECIAL_CARD	11	11	0.00
+
+
+*MIX_SPECIAL_CARD_ADVANCED	4	4	10.00
+*MIX_SPECIAL_CARD_ADVANCED	5	5	10.00
+*MIX_SPECIAL_CARD_ADVANCED	6	6	0.00
+*MIX_SPECIAL_CARD_ADVANCED	7	7	0.00
+*MIX_SPECIAL_CARD_ADVANCED	8	8	0.00
+*MIX_SPECIAL_CARD_ADVANCED	9	9	0.00
+*MIX_SPECIAL_CARD_ADVANCED	10	10	0.00
+*MIX_SPECIAL_CARD_ADVANCED	11	11	0.00
+
+
+*MIX_CARD_FURY	4	4	10.00
+*MIX_CARD_FURY	5	5	10.00
+*MIX_CARD_FURY	6	6	0.00
+*MIX_CARD_FURY	7	7	0.00
+*MIX_CARD_FURY	8	8	0.00
+*MIX_CARD_FURY	9	9	0.00
+*MIX_CARD_FURY	10	10	0.00
+*MIX_CARD_FURY	11	11	0.00
+
+
+//////////////////////////////
+// 럭키카드 확률 증가 수치 ( 증가 확률 = 실제 확률 * 럭키카드 확률 )
+// 결론 : 실제확률 = 실제확률 + 실제확률 * 럭키카드 확률
+
+*LUCKY_CARD_PROBABILITY	0.5
+
+//////////////////////////////
+// 실패시 치명적실패가 일어날 확률
+
+*CRITICAL_FAILED_PROBABILITY 0.001
+
+//////////////////////////////
+// 특정 알파벳 조합시 증가될 확률 ( 증가 확률 = 실제 확률 * 알파벳조합확률 )
+// 결론 : 실제확률 = 실제확률 + 실제확률 * 알파벳조합확률
+
+*MIX_ALPHABET_PROBABILITY	M I F	1.0
+*MIX_ALPHABET_PROBABILITY	G O D	0.9
+*MIX_ALPHABET_PROBABILITY	L U K	0.8
+*MIX_ALPHABET_PROBABILITY	T O T	0.7
+*MIX_ALPHABET_PROBABILITY	O T L	0.6
+
+///////////////////////////////
+
+// 옵션 ( 플레이타입, 모드속성 등 ) 할당시 최소 확률
+*MIN_PROBABILITY_FOR_OPTION	0.05
+
+// 옵션 ( 플레이타입, 모드속성 등 ) 할당시 최대 확률
+*MAX_PROBABILITY_FOR_OPTION	0.10
+
+// 옵션 할당시 중복 옵션이 적용될 확률 ( 확률 = 원래 확률 * THIS )
+*MULTIPLY_PROBABILITY_FOR_OVERLAP_OPTION	0.3
+
+// 네임드 카드가 나올 상황이 만들어진 상황에서 네임드 카드가 나올 확률
+*NAMED_CARD_PROBABILITY		0.000

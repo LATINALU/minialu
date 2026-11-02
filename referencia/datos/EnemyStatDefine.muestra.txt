@@ -1,0 +1,60 @@
+
+// 
+*ENEMY_STAT
+{
+   *ENEMY_INDEX   0
+
+   // 필드, 레벨1
+   *HP      500
+   *DEFENCE   100
+   *POWER      100
+   *UNK1      0
+   *UNK2      0
+   *UNK3      0
+   *UNK4      0
+
+   // 레벨2
+   *HP_2      3000
+   *DEFENCE_2   150
+   *POWER_2   1000
+   *UNK1_2      0
+   *UNK2_2      0
+   *UNK3_2      0
+   *UNK4_2      0
+
+   // 레벨3
+   *HP_3      5000
+   *DEFENCE_3   200
+   *POWER_3   1500
+   *UNK1_3      0
+   *UNK2_3      0
+   *UNK3_3      0
+   *UNK4_3      0
+
+   // 레벨4
+   *HP_4      7000
+   *DEFENCE_4   250
+   *POWER_4   2000
+   *UNK1_4      0
+   *UNK2_4      0
+   *UNK3_4      0
+   *UNK4_4      0
+
+   // 레벨5
+   *HP_5      9000
+   *DEFENCE_5   300
+   *POWER_5   2500
+   *UNK1_5      0
+   *UNK2_5      0
+   *UNK3_5      0
+   *UNK4_5      0
+
+   // 레벨6
+   *HP_6      11000
+   *DEFENCE_6   350
+   *POWER_6   3000
+   *UNK1_6      0
+   *UNK2_6      0
+   *UNK3_6      0
+   *UNK4_6      0
+}

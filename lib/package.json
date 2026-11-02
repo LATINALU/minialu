@@ -1,0 +1,19 @@
+{
+  "name": "minialu-mecanicas",
+  "version": "0.1.0",
+  "description": "Mecánicas de juego reutilizables (economía, inventario, progresión, gacha, combate, red) extraídas de MiniFighter S3",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "ejemplo": "node ejemplos/economia.ts"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

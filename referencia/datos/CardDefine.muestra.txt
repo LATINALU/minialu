@@ -1,0 +1,110 @@
+////////////////////////////////////
+//
+// 알파벳 ( *ALPHABET )은 기술되어 있지 않으면 랜덤하게 부여됨
+// 모드 속성 ( *MODE ) 은 중복이나 없는것이 가능함
+//
+
+////////////////////////////////////
+// 타입 ( *TYPE )값은 다음과 같음
+// 0 : 일반 카드
+// 1 : 네임드 카드
+// 5 : 스페셜 카드 ( 전직 카드 )
+
+////////////////////////////////////
+// 캐릭터 ( *CHARACTER ) 값은 다음과 같음
+// 0 : CHARACTER_CRO
+// 1 : CHARACTER_MARSHALL
+// 2 : CHARACTER_CARIBBEAN
+// 3 : CHARACTER_KANGHYUK
+// 4 : CHARACTER_PENNY
+// 5 : CHARACTER_HIKARU
+// 6 : CHARACTER_HOMAN
+// 7 : CHARACTER_XIAH
+// 13 : 전직 골리앗
+
+////////////////////////////////////
+// 플레이타입 ( *PLAY_TYPE ) 값은 다음과 같음
+// 0 : PLAYTYPE_NONE			
+// 1 : PLAYTYPE_SPECIAL		// 필살기 연속 사용형
+// 2 : PLAYTYPE_BERSERK		// 파워 증폭형
+
+
+////////////////////////////////////
+// 모드속성 ( *MODE ) 값은 다음과 같음
+// 0 : MODE_BATTLE		// 배틀
+// 1 : MODE_SIEGE		// 공성
+// 2 : MODE_DUNGEON		// 던전
+// 3 : MODE_QUIZ		// 퀴즈
+// 4 : MODE_TOURNAMENT		// 토너먼트
+
+
+////////////////////////////////////
+// 일반 등급카드
+
+// A등급 (BASIC)
+*CARD_INFO
+{
+	*TYPE		0
+	*LEVEL		A
+	*PUNCH_POWER	50
+	*KICK_POWER	50
+	*DEFENCE	20
+	*HP		910
+	*MP		400
+	*SKILL		50
+	*ADVSKILL	60
+	*SPECIAL	80
+	*ADVSPECIAL	0
+	*CATCH		50
+}
+
+// B등급 (MAGIC)
+*CARD_INFO
+{
+	*TYPE		0
+	*LEVEL		B
+	*PUNCH_POWER	100
+	*KICK_POWER	100
+	*DEFENCE	40
+	*HP		1830
+	*MP		450
+	*SKILL		110
+	*ADVSKILL	120
+	*SPECIAL	160
+	*ADVSPECIAL	0
+	*CATCH		100
+}
+
+// C등급 (RARE)
+*CARD_INFO
+{
+	*TYPE		0
+	*LEVEL		C
+	*PUNCH_POWER	160
+	*KICK_POWER	160
+	*DEFENCE	60
+	*HP		2740
+	*MP		500
+	*SKILL		210
+	*ADVSKILL	220
+	*SPECIAL	280
+	*ADVSPECIAL	0
+	*CATCH		160
+}
+
+// D등급 (스페셜)
+*CARD_INFO
+{
+	*TYPE		0
+	*LEVEL		D
+	*PUNCH_POWER	210
+	*KICK_POWER	210
+	*DEFENCE	80
+	*HP		3650
+	*MP		550
+	*SKILL		280
+	*ADVSKILL	290
+	*SPECIAL	330
+	*ADVSPECIAL	0
+	*CATCH		210
+}

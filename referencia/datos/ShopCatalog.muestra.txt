@@ -1,0 +1,5 @@
+// tienda	pestana	item	precio  (generado por tools\shop\tienda.py, no editar a mano)
+cash	9	1012	9900
+cash	9	1388	7500
+cash	9	1914	1300
+cash	9	5004	15000
