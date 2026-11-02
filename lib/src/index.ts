@@ -38,3 +38,7 @@ export * from "./combate/drops.ts";
 export * from "./red/paquetes.ts";
 
 export * from "./assets/sprites.ts";
+
+// Dos módulos exportan "Participante" (comercio y salas). Sin esto, `export *` lo vuelve ambiguo (TS2308).
+export type { Participante } from "./competitivo/salas.ts";
+export type { Participante as ParticipanteComercio } from "./economia/comercio.ts";
