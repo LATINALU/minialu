@@ -38,7 +38,7 @@ Requiere Node 23.6 o más nuevo (ejecuta TypeScript directo, sin compilar ni ins
 
 ```bash
 cd lib
-npm test                      # 45 pruebas
+npm test                      # 61 pruebas
 node ejemplos/economia.ts     # simula 200 partidas: fuentes y sumideros de oro
 ```
 

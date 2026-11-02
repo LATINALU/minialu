@@ -61,5 +61,6 @@ export async function casoComprar(db: Db, sesion: Sesion, objeto: number) {
 ## Pendientes del análisis (para seguir aprendiendo)
 
 - Formato `.ani` (animaciones) y `.mif` (mapas): con eso se pueden reconstruir escenas completas.
-- Misiones: 129 en `Quest.dat`, protocolo C→S 124 / S→C 119 (ver `MiniFighter\docs\MISIONES.md`).
+- Misiones: la mecánica ya está en la librería (`RegistroMisiones`); falta cargar las 129 de `Quest.dat` y su
+  protocolo C→S 124 / S→C 119 (ver `MiniFighter\docs\MISIONES.md`).
 - Runas, coliseo, torre de la oportunidad, pesca: sistemas del cliente sin servidor todavía.

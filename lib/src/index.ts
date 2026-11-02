@@ -9,6 +9,8 @@ export * from "./datos/bloques.ts";
 export * from "./datos/tabla.ts";
 
 export * from "./inventario/inventario.ts";
+export * from "./inventario/vencimiento.ts";
+export * from "./inventario/cajas.ts";
 
 export * from "./economia/billetera.ts";
 export * from "./economia/tienda.ts";
@@ -18,6 +20,14 @@ export * from "./economia/subasta.ts";
 
 export * from "./progresion/niveles.ts";
 export * from "./progresion/recompensas.ts";
+export * from "./progresion/misiones.ts";
+export * from "./progresion/habilidades.ts";
+
+export * from "./social/gremios.ts";
+export * from "./social/correo.ts";
+
+export * from "./competitivo/ranking.ts";
+export * from "./competitivo/salas.ts";
 
 export * from "./cartas/cartas.ts";
 

@@ -25,14 +25,14 @@ necesita, los números de MiniFighter como referencia, variantes para otros gén
 | Combate | Botín (drops) | [drops](drops.md) | `combate/drops.ts` | ✅ |
 | Red | Paquetes binarios y despachador | [protocolo](protocolo.md) | `red/paquetes.ts` | ✅ |
 | Assets | Sprites RGB565 | [sprites](sprites.md) | `assets/sprites.ts` | ✅ |
-| Social | Gremios | — | — | 📋 por hacer |
-| Social | Correo con adjuntos | — | — | 📋 por hacer |
-| Progresión | Misiones (matar N, entregar) | — | — | 📋 por hacer |
-| Progresión | Puntos de habilidad | — | — | 📋 por hacer |
-| Objetos | Objetos con vencimiento / VIP por tiempo | — | — | 📋 por hacer |
-| Objetos | Cajas con contenido fijo o aleatorio | — | — | 📋 por hacer |
-| Competitivo | Ranking y temporadas | — | — | 📋 por hacer |
-| Competitivo | Salas y emparejamiento | — | — | 📋 por hacer |
+| Social | Gremios | [gremios](gremios.md) | `social/gremios.ts` | ✅ |
+| Social | Correo con adjuntos | [correo](correo.md) | `social/correo.ts` | ✅ |
+| Progresión | Misiones (matar N, entregar, cadenas) | [misiones](misiones.md) | `progresion/misiones.ts` | ✅ |
+| Progresión | Puntos de habilidad | [habilidades](habilidades.md) | `progresion/habilidades.ts` | ✅ |
+| Objetos | Objetos con vencimiento / VIP por tiempo | [vencimiento](vencimiento.md) | `inventario/vencimiento.ts` | ✅ |
+| Objetos | Cajas con contenido fijo o aleatorio | [cajas](cajas.md) | `inventario/cajas.ts` | ✅ |
+| Competitivo | Ranking y temporadas (+ Elo) | [ranking](ranking.md) | `competitivo/ranking.ts` | ✅ |
+| Competitivo | Salas y emparejamiento | [salas](salas.md) | `competitivo/salas.ts` | ✅ |
 
 ## Plantilla
 
